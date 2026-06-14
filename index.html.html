@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФинАналитика - Лучшие МФО, РКО, Карты 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        .nav-link { position: relative; }
+        .nav-link:after { content: ''; position: absolute; width: 0; height: 2px; bottom: -2px; left: 0; background-color: #3b82f6; transition: width 0.3s; }
+        .nav-link:hover:after { width: 100%; }
+        table { border-collapse: collapse; }
+        th, td { padding: 12px 16px; text-align: left; }
+        tr:nth-child(even) { background-color: #f8fafc; }
+        .section-header { position: relative; }
+        .section-header:after { content: ''; position: absolute; width: 60px; height: 3px; background: #3b82f6; bottom: -8px; left: 0; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-2xl">Ф</div>
+                <div>
+                    <h1 class="text-2xl font-bold tracking-tight">ФинАналитика</h1>
+                    <p class="text-xs text-slate-500 -mt-1">Независимые сравнения 2026</p>
+                </div>
+            </div>
+            <nav class="flex items-center gap-8 text-sm font-medium">
+                <a href="#mfo" class="nav-link text-slate-600 hover:text-blue-600">МФО</a>
+                <a href="#rko" class="nav-link text-slate-600 hover:text-blue-600">РКО</a>
+                <a href="#debit" class="nav-link text-slate-600 hover:text-blue-600">Дебетовые карты</a>
+                <a href="#credit" class="nav-link text-slate-600 hover:text-blue-600">Кредитные карты</a>
+            </nav>
+            <div>
+                <button onclick="document.getElementById('hero').scrollIntoView({behavior: 'smooth'})" 
+                        class="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-semibold text-sm transition-colors">
+                    Подобрать
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero-bg text-white py-28">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-3xl text-sm mb-6">
+                <span class="px-3 py-1 bg-white text-blue-700 rounded-3xl font-medium">Июнь 2026</span>
+            </div>
+            <h1 class="text-6xl font-bold tracking-tighter mb-6">Лучшие финансовые продукты России</h1>
+            <p class="max-w-2xl mx-auto text-xl text-blue-100">Объективные рейтинги МФО, РКО, дебетовых и кредитных карт. Только актуальная аналитика.</p>
+            <div class="mt-12 flex justify-center gap-6">
+                <a href="#mfo" class="px-10 py-4 bg-white text-blue-700 rounded-3xl font-semibold text-lg shadow-lg hover:shadow-xl">МФО</a>
+                <a href="#debit" class="px-10 py-4 border-2 border-white text-white rounded-3xl font-semibold text-lg hover:bg-white/10">Дебетовые карты</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MFO Section -->
+    <section id="mfo" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="uppercase text-blue-600 text-sm font-semibold tracking-widest">Микрофинансовые организации</span>
+                <h2 class="text-5xl font-bold mt-3 section-header">ТОП-15 МФО 2026</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Expanded MFO cards - doubled + more -->
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start"><div class="font-bold text-2xl">Займер</div><div class="text-emerald-600 font-semibold">4.9 ★</div></div>
+                    <ul class="mt-6 space-y-3 text-sm">
+                        <li>до 1 млн ₽</li>
+                        <li>от 0.01% в день</li>
+                        <li>до 365 дней</li>
+                        <li>Мгновенное одобрение</li>
+                    </ul>
+                    <a href="https://example.com/zaymer" target="_blank" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Оформить займ</a>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start"><div class="font-bold text-2xl">еКапуста</div><div class="text-emerald-600 font-semibold">4.8 ★</div></div>
+                    <ul class="mt-6 space-y-3 text-sm">
+                        <li>до 30 000 ₽ первый займ</li>
+                        <li>0% первый займ</li>
+                        <li>до 21 дня</li>
+                        <li>Без справок</li>
+                    </ul>
+                    <a href="https://example.com/ekapusta" target="_blank" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Оформить</a>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start"><div class="font-bold text-2xl">MoneyMan</div><div class="text-emerald-600 font-semibold">4.7 ★</div></div>
+                    <ul class="mt-6 space-y-3 text-sm">
+                        <li>до 500 000 ₽</li>
+                        <li>от 0.1% в день</li>
+                        <li>до 18 месяцев</li>
+                        <li>Онлайн-решение</li>
+                    </ul>
+                    <a href="https://example.com/moneyman" target="_blank" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Оформить</a>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start"><div class="font-bold text-2xl">Турбозайм</div><div class="text-emerald-600 font-semibold">4.8 ★</div></div>
+                    <ul class="mt-6 space-y-3 text-sm">
+                        <li>до 100 000 ₽</li>
+                        <li>от 0.5% в день</li>
+                        <li>до 30 дней</li>
+                        <li>Быстрая выдача</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Оформить</a>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start"><div class="font-bold text-2xl">Webbankir</div><div class="text-emerald-600 font-semibold">4.6 ★</div></div>
+                    <ul class="mt-6 space-y-3 text-sm">
+                        <li>до 50 000 ₽</li>
+                        <li>от 0.8% в день</li>
+                        <li>Прозрачные условия</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Оформить</a>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start"><div class="font-bold text-2xl">Lime</div><div class="text-emerald-600 font-semibold">4.7 ★</div></div>
+                    <ul class="mt-6 space-y-3 text-sm">
+                        <li>до 100 000 ₽</li>
+                        <li>0% на первый займ</li>
+                        <li>до 168 дней</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Оформить</a>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start"><div class="font-bold text-2xl">Кредит7</div><div class="text-emerald-600 font-semibold">4.5 ★</div></div>
+                    <ul class="mt-6 space-y-3 text-sm">
+                        <li>до 500 000 ₽</li>
+                        <li>от 0.2% в день</li>
+                        <li>до 12 месяцев</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Оформить</a>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start"><div class="font-bold text-2xl">Быстроденьги</div><div class="text-emerald-600 font-semibold">4.6 ★</div></div>
+                    <ul class="mt-6 space-y-3 text-sm">
+                        <li>до 100 000 ₽</li>
+                        <li>от 0.9% в день</li>
+                        <li>до 1 года</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Оформить</a>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start"><div class="font-bold text-2xl">RocketMan</div><div class="text-emerald-600 font-semibold">4.7 ★</div></div>
+                    <ul class="mt-6 space-y-3 text-sm">
+                        <li>до 300 000 ₽</li>
+                        <li>от 0.3% в день</li>
+                        <li>Быстрое решение</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Оформить</a>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start"><div class="font-bold text-2xl">Эквазайм</div><div class="text-emerald-600 font-semibold">4.4 ★</div></div>
+                    <ul class="mt-6 space-y-3 text-sm">
+                        <li>до 150 000 ₽</li>
+                        <li>от 0.4% в день</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Оформить</a>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start"><div class="font-bold text-2xl">МаниМен</div><div class="text-emerald-600 font-semibold">4.8 ★</div></div>
+                    <ul class="mt-6 space-y-3 text-sm">
+                        <li>до 800 000 ₽</li>
+                        <li>Гибкие условия</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Оформить</a>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="flex justify-between items-start"><div class="font-bold text-2xl">Бюджет</div><div class="text-emerald-600 font-semibold">4.5 ★</div></div>
+                    <ul class="mt-6 space-y-3 text-sm">
+                        <li>до 200 000 ₽</li>
+                        <li>Низкие ставки</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Оформить</a>
+                </div>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-6">Сравнительная таблица МФО</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm border border-slate-200 rounded-2xl">
+                    <thead class="bg-slate-100">
+                        <tr>
+                            <th>МФО</th><th>Макс. сумма</th><th>Ставка</th><th>Срок</th><th>Первый займ</th><th>Рейтинг</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Займер</td><td>1 000 000 ₽</td><td>0.01%</td><td>365 дней</td><td>0%</td><td>4.9</td></tr>
+                        <tr><td>еКапуста</td><td>30 000 ₽</td><td>0%</td><td>21 день</td><td>0%</td><td>4.8</td></tr>
+                        <tr><td>MoneyMan</td><td>500 000 ₽</td><td>0.1%</td><td>18 мес</td><td>—</td><td>4.7</td></tr>
+                        <tr><td>Турбозайм</td><td>100 000 ₽</td><td>0.5%</td><td>30 дней</td><td>—</td><td>4.8</td></tr>
+                        <tr><td>Lime</td><td>100 000 ₽</td><td>0.2%</td><td>168 дней</td><td>0%</td><td>4.7</td></tr>
+                        <tr><td>Кредит7</td><td>500 000 ₽</td><td>0.2%</td><td>12 мес</td><td>—</td><td>4.5</td></tr>
+                        <tr><td>Быстроденьги</td><td>100 000 ₽</td><td>0.9%</td><td>1 год</td><td>—</td><td>4.6</td></tr>
+                        <tr><td>RocketMan</td><td>300 000 ₽</td><td>0.3%</td><td>до 180 дней</td><td>—</td><td>4.7</td></tr>
+                        <tr><td>Эквазайм</td><td>150 000 ₽</td><td>0.4%</td><td>до 90 дней</td><td>—</td><td>4.4</td></tr>
+                        <tr><td>МаниМен</td><td>800 000 ₽</td><td>0.15%</td><td>до 24 мес</td><td>—</td><td>4.8</td></tr>
+                        <tr><td>Бюджет</td><td>200 000 ₽</td><td>0.25%</td><td>до 12 мес</td><td>—</td><td>4.5</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- RKO Section -->
+    <section id="rko" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="uppercase text-blue-600 text-sm font-semibold tracking-widest">Расчётные счета для бизнеса</span>
+                <h2 class="text-5xl font-bold mt-3 section-header">Лучшие РКО 2026</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="font-bold text-2xl mb-2">Точка</div>
+                    <p class="text-emerald-600">Открытие за 5 минут • Кэшбэк до 10%</p>
+                    <ul class="mt-4 text-sm space-y-1">
+                        <li>✓ 0 руб. обслуживание</li>
+                        <li>✓ Интеграция с бухгалтерией</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Открыть счёт</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="font-bold text-2xl mb-2">Т-Банк</div>
+                    <p class="text-emerald-600">0 ₽ обслуживание первые 3 месяца</p>
+                    <ul class="mt-4 text-sm space-y-1">
+                        <li>✓ Бесплатные платежи</li>
+                        <li>✓ Мобильное приложение</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Открыть счёт</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="font-bold text-2xl mb-2">Модульбанк</div>
+                    <p class="text-emerald-600">Для ИП и ООО</p>
+                    <ul class="mt-4 text-sm space-y-1">
+                        <li>✓ Быстрое открытие</li>
+                        <li>✓ Персональный менеджер</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Открыть счёт</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="font-bold text-2xl mb-2">Альфа-Бизнес</div>
+                    <p class="text-emerald-600">Надёжный банк для бизнеса</p>
+                    <ul class="mt-4 text-sm space-y-1">
+                        <li>✓ Кэшбэк на всё</li>
+                        <li>✓ Удобный интернет-банк</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Открыть счёт</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="font-bold text-2xl mb-2">СберБизнес</div>
+                    <p class="text-emerald-600">Самый популярный</p>
+                    <ul class="mt-4 text-sm space-y-1">
+                        <li>✓ Экосистема Сбера</li>
+                        <li>✓ Поддержка 24/7</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Открыть счёт</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="font-bold text-2xl mb-2">ПСБ</div>
+                    <p class="text-emerald-600">Для среднего бизнеса</p>
+                    <ul class="mt-4 text-sm space-y-1">
+                        <li>✓ Специальные тарифы</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Открыть счёт</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="font-bold text-2xl mb-2">ВТБ Бизнес</div>
+                    <p class="text-emerald-600">Государственный надёжный</p>
+                    <ul class="mt-4 text-sm space-y-1">
+                        <li>✓ Кредитные продукты</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Открыть счёт</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 card-hover">
+                    <div class="font-bold text-2xl mb-2">Райффайзен</div>
+                    <p class="text-emerald-600">Европейские стандарты</p>
+                    <ul class="mt-4 text-sm space-y-1">
+                        <li>✓ Премиум сервис</li>
+                    </ul>
+                    <a href="#" class="mt-8 block w-full py-4 bg-blue-600 text-white text-center rounded-2xl font-semibold">Открыть счёт</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Debit Cards -->
+    <section id="debit" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="uppercase text-blue-600 text-sm font-semibold tracking-widest">Дебетовые карты</span>
+                <h2 class="text-5xl font-bold mt-3 section-header">Топ дебетовых карт 2026</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Doubled debit cards -->
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">T-Bank Black</div>
+                    <div class="mt-4 text-emerald-600">Кэшбэк до 30% • до 15% на остаток</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить карту</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Альфа-Карта</div>
+                    <div class="mt-4 text-emerald-600">До 10% кэшбэк + категории</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Газпромбанк</div>
+                    <div class="mt-4 text-emerald-600">% на остаток + кэшбэк</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">ВТБ Мультикарта</div>
+                    <div class="mt-4 text-emerald-600">До 15% кэшбэк в категориях</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">СберКарта</div>
+                    <div class="mt-4 text-emerald-600">Бонусы Спасибо + кэшбэк</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Открытие</div>
+                    <div class="mt-4 text-emerald-600">До 12% на остаток</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Росбанк</div>
+                    <div class="mt-4 text-emerald-600">Кэшбэк до 10% + travel</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Райффайзен #ВсёСразу</div>
+                    <div class="mt-4 text-emerald-600">До 15% кэшбэк</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Хоум Банк</div>
+                    <div class="mt-4 text-emerald-600">Высокий % на остаток</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Совкомбанк</div>
+                    <div class="mt-4 text-emerald-600">До 20% в категориях</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">МТС Банк</div>
+                    <div class="mt-4 text-emerald-600">Кэшбэк + баллы МТС</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Почта Банк</div>
+                    <div class="mt-4 text-emerald-600">Простая и выгодная</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credit Cards -->
+    <section id="credit" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="uppercase text-blue-600 text-sm font-semibold tracking-widest">Кредитные карты</span>
+                <h2 class="text-5xl font-bold mt-3 section-header">Лучшие кредитные карты 2026</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Expanded credit cards -->
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Альфа-Банк 100 дней</div>
+                    <div class="mt-4 text-emerald-600">Грейс 100 дней • Лимит до 700к</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">T-Bank Platinum</div>
+                    <div class="mt-4 text-emerald-600">До 180 дней без %</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Халва Совкомбанк</div>
+                    <div class="mt-4 text-emerald-600">Рассрочка до 24 мес везде</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">ВТБ Классик</div>
+                    <div class="mt-4 text-emerald-600">До 110 дней грейс</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">СберКредитка</div>
+                    <div class="mt-4 text-emerald-600">Грейс до 120 дней</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Росбанк #120подряд</div>
+                    <div class="mt-4 text-emerald-600">120 дней без процентов</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Открытие Opencard</div>
+                    <div class="mt-4 text-emerald-600">Кэшбэк + грейс</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Газпромбанк</div>
+                    <div class="mt-4 text-emerald-600">До 180 дней грейс</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">МТС Кредитная</div>
+                    <div class="mt-4 text-emerald-600">Баллы + низкая ставка</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Почта Банк</div>
+                    <div class="mt-4 text-emerald-600">Рассрочка и cashback</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">Райффайзен 110 дней</div>
+                    <div class="mt-4 text-emerald-600">Грейс 110 дней</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-3xl p-6 card-hover">
+                    <div class="font-semibold text-xl">БКС</div>
+                    <div class="mt-4 text-emerald-600">Премиальные условия</div>
+                    <a href="#" class="mt-8 block w-full py-3.5 bg-blue-600 text-white text-center rounded-2xl font-semibold text-sm">Оформить</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center text-sm">
+            <p>ФинАналитика — независимый обзор финансовых продуктов. Информация носит ознакомительный характер.</p>
+            <p class="mt-4">© 2026. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script already loaded
+    </script>
+</body>
+</html>
